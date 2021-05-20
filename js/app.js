@@ -22,3 +22,25 @@ function buildTable(data) {
         });
     });
 };
+
+// Function that handles table filtering
+function handleClick() {
+    // Grabs datetime value from filter
+    let date = d3.select("#datetime").property("value");
+    // Default filter
+    let filteredData = tableData;
+
+    // Has set date used as filter, unless no date is set
+    if (date) {
+        filteredData = filteredData.filter(row => row.datetime === date);
+    };
+
+    // Rebuilds table using filtered data
+    buildTable(filteredData);
+};
+
+// Calls handleClick function when button click is heard
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+// Creates table using original imported data
+buildTable(tableData);
