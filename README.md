@@ -1,2 +1,17 @@
-# UFOs
-Analyzing data on UFO sightings
+# UFO Sighting Data Filtering
+
+## Overview of Project
+
+### Purpose
+The main goal of this project was to update the index.html and app.js files for the UFO sighting site, so that users could filter the available data on multiple criteria - including date, city, state, country, and shape, which refers to the shape of the UFO.
+
+## Results
+Now that users are able to filter the data table on the UFO sighting site using multiple criteria, it will be much easier for users to find data in the table that they are looking for. For instance, let's say a user wants to look at data for UFO sightings that occurred on 1/1/2020 in the city of El Cajon in California. Before delving into this example, it should be noted that the site looks like the following screenshot when no filters are applied. ![](https://github.com/HannaKim4673/UFOs/blob/main/Screenshots%20for%20readme/No%20Filters.png) Given the size of the scroll bar, it is clear that there is a lot of data on the site, which means that it would be very difficult for a user to find the data they are looking for without filtering. Getting back to the example, in order to start their search, a user may type 1/1/2020 in the Date filter box, and press the Enter key on their keyboard. Then, the site will change to look like the following screenshot - in which it is clear that the amount of data in the table has shrunk after applying the filter, since the scroll bar has increased in size. ![](https://github.com/HannaKim4673/UFOs/blob/main/Screenshots%20for%20readme/Date%20Filter.png) After that, in order to only see data for UFO sightings in California, the user may type ca in the State filter box, and press Enter. After that, the site should change once more and resemble the following screenshot. ![](https://github.com/HannaKim4673/UFOs/blob/main/Screenshots%20for%20readme/Date%20and%20State%20Filter.png) Finally, in order to only see UFO sighting data for the Californian city of El Cajon, the user just needs to type el cajon in the City filter box, and press Enter. Afterwards, as visible in the following screenshot, the data table will have shrunk considerably and only data for UFO sightings that occurred in the city of El Cajon in California on 1/1/2020 appears on the table. ![](https://github.com/HannaKim4673/UFOs/blob/main/Screenshots%20for%20readme/Date%2C%20State%2C%20and%20City%20Filters.png) While the Country and Shape filter boxes were not used in this example, all a user would have to do to utilize these filter boxes is type in lower case the shape and country initials they are looking for, and press the Enter key. Then, the data table will be filtered and only show data that matches the search criteria the user entered.
+
+## Summary
+
+### One Drawback of New Design
+While the new design definitely makes it easier for users to search for data they want, one drawback of this new design is that users may not know how to get the filters to work in the first place. After all, there are no instructions on the site telling the users that they need to press Enter on their keyboard to apply filters, and there is no longer a button that applies a filter. Therefore, new users may not know how the new filter system works.
+
+### Two Recommendations for Further Development
+Given the drawback mentioned in the previous section, one recommendation I can make for further development is to add a textbox above the filter boxes on the website that tells users that they need to press Enter on their keyboards after typing in a filter criterion in order for the filter to be applied to the data table. Another recommendation I have is to add lines that clearly separate the columns of the data table, to make it easier for users to tell where 1 value ends and another begins.
